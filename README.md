@@ -1,3 +1,41 @@
+
+This is hard coded and not dynamic making the data not available in other parts of the code
+import './ExpenseItem.css'
+
+HINT 1 
+//To add a JS to make the code dynamic start with const
+//You dont have data hard coded in html.
+
+//Add this code under the function ExpenseItem
+    const expenseDate = new Date(2021, 2, 28);
+    const expenseTitle = 'Car Insurance';
+    const expenseAmount = 200.28
+
+Hint 2. To make tthe code dynamic, use a special syntax called JSX expression
+// to tell react that this is a javascript expression, using curly braces {}
+
+
+function ExpenseItem() {
+    return (
+        <div className='expense-item'>
+            <div>March 28th 2021</div>
+            <div className="expense-item_description">
+                <h2>Car Insurance</h2>
+                <div className='expense-item_price'>$200.28</div>
+            </div>
+
+        </div>
+    )
+};
+
+export default ExpenseItem;
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
